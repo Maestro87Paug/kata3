@@ -24,7 +24,7 @@ public class EmployeeTransformer {
 
             try {
                 employees.add(parser.parse(line));
-            } catch (IllegalArgumentException e) {
+            } catch (Exception e) {
                 discarded++;
             }
         }
