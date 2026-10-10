@@ -14,6 +14,7 @@ public class JsonWriter {
     private final Gson gson = new GsonBuilder()
             .setPrettyPrinting()
             .serializeNulls()
+            .disableHtmlEscaping()
             .create();
 
     public void write(EmployeeReport report, OutputStream output)
