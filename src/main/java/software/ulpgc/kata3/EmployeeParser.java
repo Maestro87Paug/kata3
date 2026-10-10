@@ -7,14 +7,6 @@ public class EmployeeParser {
     public Employee parse(String line) {
         String[] fields = line.split("\t");
 
-        if (fields.length > 11) {
-            throw new IllegalArgumentException(
-                    "El registro tiene más de 11 columnas"
-            );
-        }
-
-        fields = Arrays.copyOf(fields, 11);
-
         return new Employee(
                 text(fields[0]),
                 number(fields[1]),
