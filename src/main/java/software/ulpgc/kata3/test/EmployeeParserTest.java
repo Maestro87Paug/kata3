@@ -40,7 +40,10 @@ public class EmployeeParserTest {
     void should_throw_when_line_has_missing_fields() {
         String line = String.join("\t", "John", "37");
 
-        assertThrows(Exception.class, () -> parser.parse(line));
+        assertThrows(
+                ArrayIndexOutOfBoundsException.class,
+                () -> parser.parse(line)
+        );
     }
 
     @Test
