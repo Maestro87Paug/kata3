@@ -1,7 +1,8 @@
-package software.ulpgc.kata3;
+package software.ulpgc.kata3.io;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import software.ulpgc.kata3.model.EmployeeReport;
 
 import java.io.IOException;
 import java.io.OutputStream;

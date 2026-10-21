@@ -1,9 +1,9 @@
 package software.ulpgc.kata3.test;
 
 import org.junit.jupiter.api.Test;
-import software.ulpgc.kata3.EmployeeParser;
-import software.ulpgc.kata3.EmployeeReport;
-import software.ulpgc.kata3.EmployeeTransformer;
+import software.ulpgc.kata3.processing.EmployeeParser;
+import software.ulpgc.kata3.model.EmployeeReport;
+import software.ulpgc.kata3.processing.EmployeeTransformer;
 
 import java.util.List;
 

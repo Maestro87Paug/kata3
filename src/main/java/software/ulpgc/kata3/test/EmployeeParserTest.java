@@ -1,8 +1,8 @@
 package software.ulpgc.kata3.test;
 
 import org.junit.jupiter.api.Test;
-import software.ulpgc.kata3.Employee;
-import software.ulpgc.kata3.EmployeeParser;
+import software.ulpgc.kata3.model.Employee;
+import software.ulpgc.kata3.processing.EmployeeParser;
 
 import static org.junit.jupiter.api.Assertions.*;
 

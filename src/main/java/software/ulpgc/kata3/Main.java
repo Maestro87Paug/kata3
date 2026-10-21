@@ -1,5 +1,11 @@
 package software.ulpgc.kata3;
 
+import software.ulpgc.kata3.io.JsonWriter;
+import software.ulpgc.kata3.io.TsvReader;
+import software.ulpgc.kata3.model.EmployeeReport;
+import software.ulpgc.kata3.processing.EmployeeParser;
+import software.ulpgc.kata3.processing.EmployeeTransformer;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Reader;

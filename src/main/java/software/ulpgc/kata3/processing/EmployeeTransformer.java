@@ -1,4 +1,7 @@
-package software.ulpgc.kata3;
+package software.ulpgc.kata3.processing;
+
+import software.ulpgc.kata3.model.Employee;
+import software.ulpgc.kata3.model.EmployeeReport;
 
 import java.util.ArrayList;
 import java.util.List;
