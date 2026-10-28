@@ -8,6 +8,12 @@ public class EmployeeParser {
     public Employee parse(String line) {
         String[] fields = line.split("\t");
 
+        if (fields.length != 11) {
+            throw new IllegalArgumentException(
+                    "La fila debe tener 11 columnas"
+            );
+        }
+
         return new Employee(
                 text(fields[0]),
                 number(fields[1]),
@@ -24,7 +30,7 @@ public class EmployeeParser {
     }
 
     private String text(String value) {
-        if (value == null) {
+        if (value == null || value.isBlank()) {
             return null;
         }
 
