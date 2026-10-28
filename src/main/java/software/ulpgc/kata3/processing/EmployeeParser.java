@@ -1,12 +1,11 @@
 package software.ulpgc.kata3.processing;
 
-
 import software.ulpgc.kata3.model.Employee;
 
 public class EmployeeParser {
 
     public Employee parse(String line) {
-        String[] fields = line.split("\t");
+        String[] fields = line.split("\t", -1);
 
         if (fields.length != 11) {
             throw new IllegalArgumentException(
@@ -30,7 +29,7 @@ public class EmployeeParser {
     }
 
     private String text(String value) {
-        if (value == null || value.isBlank()) {
+        if (value.isBlank()) {
             return null;
         }
 
