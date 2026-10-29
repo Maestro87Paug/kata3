@@ -41,7 +41,7 @@ public class EmployeeParserTest {
         String line = String.join("\t", "John", "37");
 
         assertThrows(
-                ArrayIndexOutOfBoundsException.class,
+                IllegalArgumentException.class,
                 () -> parser.parse(line)
         );
     }
