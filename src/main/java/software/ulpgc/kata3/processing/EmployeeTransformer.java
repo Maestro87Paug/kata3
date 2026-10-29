@@ -27,7 +27,7 @@ public class EmployeeTransformer {
 
             try {
                 employees.add(parser.parse(line));
-            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+            } catch (IllegalArgumentException e) {
                 discarded++;
             }
         }
